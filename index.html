@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Nauli - Masakan Rumahan Terbaik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-text">Warung Nauli</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link btn btn-outline-light btn-sm ms-2" href="register.html">Daftar</a>
+                    <a class="nav-link ms-3 position-relative" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold">Selamat Datang di Warung Nauli</h1>
+                    <p class="lead">Nikmati hidangan lezat dengan cita rasa rumahan yang autentik</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary btn-lg me-3">Lihat Menu</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <img src="images/hero-image.jpg" alt="Warung Nauli" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-utensils fa-3x mb-3"></i>
+                        <h3>Masakan Rumahan</h3>
+                        <p>Hidangan lezat dengan cita rasa rumahan yang autentik</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-clock fa-3x mb-3"></i>
+                        <h3>Buka Dari Jam 9 pagi hingga 9 Malam</h3>
+                        <p>Melayani Anda dengan pelayanan terbaik</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-truck fa-3x mb-3"></i>
+                        <h3>Pengiriman Cepat</h3>
+                        <p>Layanan pengiriman cepat ke daerah sekitar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Menu Favorit Kami</h2>
+            
+            <!-- Foods -->
+            <h3 class="menu-category-title text-center" data-aos="fade-up">Makanan</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item">
+                        <div class="card h-100">
+                            <img src="images/Nasi_Goreng.jpg" alt="Nasi Goreng" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Nasi Goreng Spesial</h5>
+                                <p class="card-text">Nasi goreng dengan bumbu rahasia, telur, dan sayuran segar</p>
+                                <p class="price">Rp 15.000</p>
+                                <button class="btn-order-now add-to-cart mt-auto" 
+                                    data-name="Nasi Goreng Spesial"
+                                    data-price="15000"
+                                    data-image="images/Nasi_Goreng.jpg">
+                                    <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item">
+                        <div class="card h-100">
+                            <img src="images/Ayam_Goreng.jpg" alt="Ayam Goreng" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Ayam Goreng Crispy</h5>
+                                <p class="card-text">Ayam goreng dengan tepung rahasia, renyah di luar juicy di dalam</p>
+                                <p class="price">Rp 20.000</p>
+                                <button class="btn-order-now add-to-cart mt-auto"
+                                    data-name="Ayam Goreng Crispy"
+                                    data-price="20000"
+                                    data-image="images/Ayam_Goreng.jpg">
+                                    <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-item">
+                        <div class="card h-100">
+                            <img src="images/Ayam_Bakar.jpg" alt="Ayam Bakar" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Ayam Bakar Spesial</h5>
+                                <p class="card-text">Ayam bakar dengan bumbu khas, disajikan dengan sambal terasi</p>
+                                <p class="price">Rp 20.000</p>
+                                <button class="btn-order-now add-to-cart mt-auto"
+                                    data-name="Ayam Bakar Spesial"
+                                    data-price="20000"
+                                    data-image="images/Ayam_Bakar.jpg">
+                                    <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <h3 class="menu-category-title text-center" data-aos="fade-up">Minuman</h3>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item">
+                        <div class="card h-100">
+                            <img src="images/Nasi_Goreng.jpg" alt="Es Teh" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Es Teh Manis</h5>
+                                <p class="card-text">Teh manis dengan es batu segar</p>
+                                <p class="price">Rp 5.000</p>
+                                <button class="btn-order-now add-to-cart mt-auto" 
+                                    data-name="Es Teh Manis"
+                                    data-price="5000"
+                                    data-image="images/Nasi_Goreng.jpg">
+                                    <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item">
+                        <div class="card h-100">
+                            <img src="images/Ayam_Goreng.jpg" alt="Es Jeruk" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Es Jeruk</h5>
+                                <p class="card-text">Jeruk peras segar dengan es batu</p>
+                                <p class="price">Rp 7.000</p>
+                                <button class="btn-order-now add-to-cart mt-auto"
+                                    data-name="Es Jeruk"
+                                    data-price="7000"
+                                    data-image="images/Ayam_Goreng.jpg">
+                                    <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-item">
+                        <div class="card h-100">
+                            <img src="images/Ayam_Bakar.jpg" alt="Es Campur" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Es Campur</h5>
+                                <p class="card-text">Campuran buah-buahan segar dengan sirup dan es batu</p>
+                                <p class="price">Rp 10.000</p>
+                                <button class="btn-order-now add-to-cart mt-auto"
+                                    data-name="Es Campur"
+                                    data-price="10000"
+                                    data-image="images/Ayam_Bakar.jpg">
+                                    <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Order Button -->
+    <div class="quick-order-container">
+        <a href="cart.html" class="quick-order-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-badge">0</span>
+        </a>
+    </div>
+
+    <!-- Special Offers -->
+    <section class="special-offers py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Penawaran Spesial</h2>
+            <div id="offersCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#offersCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#offersCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#offersCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="offer-card">
+                            <img src="images/Nasi_Goreng.jpg" alt="Paket Nasi Goreng" class="img-fluid rounded">
+                            <div class="offer-content">
+                                <h3>Paket Nasi Goreng Spesial</h3>
+                                <p>Nasi Goreng + Es Teh + Kerupuk</p>
+                                <p class="price">Rp 30.000</p>
+                                <a href="https://wa.me/6281234567890?text=Halo, saya ingin memesan Paket Nasi Goreng Spesial" class="btn btn-success" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="offer-card">
+                            <img src="images/Ayam_Goreng.jpg" alt="Paket Ayam Goreng" class="img-fluid rounded">
+                            <div class="offer-content">
+                                <h3>Paket Ayam Goreng Crispy</h3>
+                                <p>Ayam Goreng + Nasi + Es Teh + Sambal</p>
+                                <p class="price">Rp 35.000</p>
+                                <a href="https://wa.me/6281234567890?text=Halo, saya ingin memesan Paket Ayam Goreng Crispy" class="btn btn-success" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="offer-card">
+                            <img src="images/Ayam_Bakar.jpg" alt="Paket Ayam Bakar" class="img-fluid rounded">
+                            <div class="offer-content">
+                                <h3>Paket Ayam Bakar Spesial</h3>
+                                <p>Ayam Bakar + Nasi + Es Teh + Sambal Terasi</p>
+                                <p class="price">Rp 40.000</p>
+                                <a href="https://wa.me/6281234567890?text=Halo, saya ingin memesan Paket Ayam Bakar Spesial" class="btn btn-success" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#offersCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#offersCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2 class="mb-4">Tentang Warung Nauli</h2>
+                    <p class="lead">Warung Nauli adalah warung makan yang menyajikan berbagai hidangan lezat dengan harga terjangkau.</p>
+                    <p>Kami berkomitmen untuk memberikan pengalaman makan yang menyenangkan dengan pelayanan terbaik dan cita rasa yang autentik.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Bahan-bahan segar</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Masakan rumahan</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pelayanan ramah</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <img src="images/about-image.jpg" alt="Warung Nauli" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Apa Kata Mereka</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Masakannya enak banget, rasanya seperti masakan rumahan. Pelayanannya juga ramah!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-1.jpg" alt="Customer 1" class="rounded-circle">
+                            <div>
+                                <h5>Budi Santoso</h5>
+                                <p>Pelanggan Setia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Harga terjangkau, porsi banyak, dan rasanya enak. Recommended!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-2.jpg" alt="Customer 2" class="rounded-circle">
+                            <div>
+                                <h5>Siti Aminah</h5>
+                                <p>Food Blogger</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Tempatnya nyaman, bersih, dan masakannya enak. Saya suka sekali!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial-3.jpg" alt="Customer 3" class="rounded-circle">
+                            <div>
+                                <h5>Rudi Hartono</h5>
+                                <p>Pengusaha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Hubungi Kami</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Nomor Telepon" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="contact-info">
+                        <h4>Informasi Kontak</h4>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Alamat</h5>
+                                <p>Jl. Siswa no. 155, Kota</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h5>Telepon</h5>
+                                <p>(123) 456-7890</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>info@warungnauli.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h5>Jam Buka</h5>
+                                <p>24 Jam Setiap Hari</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Warung Nauli</h5>
+                    <p>Masakan rumahan terbaik untuk Anda</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <h5>Jam Operasional</h5>
+                    <p><i class="far fa-clock"></i> Buka Dari jam 9 pagi Hingga 9 malam</p>
+                    <p><i class="fas fa-motorcycle"></i> Pengiriman: 10:00 - 21:00</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kontak</h5>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@warungnauli.com</p>
+                    <a href="https://wa.me/6281234567890" class="btn btn-success btn-sm" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Update cart badge
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            document.querySelectorAll('.cart-badge').forEach(badge => {
+                badge.textContent = totalItems;
+            });
+        }
+
+        // Update active menu based on scroll position
+        function updateActiveMenu() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                    if (navLink) navLink.classList.add('active');
+                }
+            });
+        }
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const item = {
+                    name: this.dataset.name,
+                    price: parseInt(this.dataset.price),
+                    image: this.dataset.image,
+                    quantity: 1
+                };
+
+                // Get current cart
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                
+                // Check if item already exists in cart
+                const existingItem = cart.find(i => i.name === item.name);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push(item);
+                }
+
+                // Save cart
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                // Update cart badge
+                updateCartBadge();
+            });
+        });
+
+        // Update cart badge on page load
+        updateCartBadge();
+
+        // Update active menu on scroll
+        window.addEventListener('scroll', updateActiveMenu);
+        window.addEventListener('load', updateActiveMenu);
+    </script>
+</body>
+</html>

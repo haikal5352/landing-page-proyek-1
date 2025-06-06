@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Warung Nauli</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">Warung Nauli</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link btn btn-outline-light btn-sm ms-2" href="register.html">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="margin-top: 32px;">Keranjang Belanja</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="cart-items">
+                        <!-- Cart items will be dynamically added here -->
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cart-summary">
+                        <h4>Ringkasan Pesanan</h4>
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span id="subtotal">Rp 0</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Biaya Pengiriman</span>
+                            <span id="delivery">Rp 10.000</span>
+                        </div>
+                        <hr>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span id="total">Rp 0</span>
+                        </div>
+                        <a href="#" class="btn-order-now w-100 mt-3" id="checkoutBtn">
+                            <i class="fas fa-credit-card"></i> Checkout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Warung Nauli</h5>
+                    <p>Masakan rumahan terbaik untuk Anda</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Jam Operasional</h5>
+                    <p><i class="far fa-clock"></i> Buka Dari jam 9 pagi Hingga 9 malam</p>
+                    <p><i class="fas fa-motorcycle"></i> Pengiriman: 10:00 - 21:00</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kontak</h5>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@warungnauli.com</p>
+                    <a href="https://wa.me/6281234567890" class="btn btn-success btn-sm" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="loginPopup" class="modal" style="display:none;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius:16px;">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login Diperlukan</h5>
+                    <button type="button" class="btn-close" id="closeLoginPopup"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Anda harus login terlebih dahulu untuk melanjutkan checkout.</p>
+                    <div class="d-flex justify-content-end gap-2">
+                        <a href="login.html" class="btn btn-primary">Login</a>
+                        <a href="register.html" class="btn btn-outline-primary">Daftar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html> 
