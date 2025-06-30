@@ -95,43 +95,6 @@ function displayMenuItems() {
     }
 }
 
-// Shopping cart functionality
-let cart = [];
-
-function addToCart(itemId) {
-    const item = menuItems.find(item => item.id === itemId);
-    if (item) {
-        cart.push(item);
-        updateCartCount();
-        showNotification(`${item.name} ditambahkan ke keranjang`);
-    }
-}
-
-function updateCartCount() {
-    const cartCount = document.getElementById('cart-count');
-    if (cartCount) {
-        cartCount.textContent = cart.length;
-    }
-}
-
-function showNotification(message) {
-    const notification = document.createElement('div');
-    notification.className = 'notification';
-    notification.textContent = message;
-    document.body.appendChild(notification);
-
-    setTimeout(() => {
-        notification.classList.add('show');
-    }, 100);
-
-    setTimeout(() => {
-        notification.classList.remove('show');
-        setTimeout(() => {
-            notification.remove();
-        }, 300);
-    }, 2000);
-}
-
 // Function to handle contact form submission
 function handleContactFormSubmit(event) {
     event.preventDefault();
